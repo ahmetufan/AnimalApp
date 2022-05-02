@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">KotlinAnimalApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hayvan_haklari">Hayvan Hakları Evrensel Bildirgesi
+Madde 1- Bütün hayvanlar yaşam önünde eşit doğar ve aynı var olmak hakkına sahiptir.
+Madde 2-1.Bütün hayvanlar saygı görme hakkına sahiptir.
+ 2.Bir tür hayvan olan insan,öbür hayvanları yok edemez,bu hakkı çiğneyerek onları
+ sömüremez,bilgilerini hayvanların hizmetine sunmakla görevlidir.
+ 3.Bütün hayvanların insanlarca gözetilme,bakılma ve korunma hakları vardır.
+Madde 3-1.Hiçbir hayvana kötü davranılmaz,acımasız ve zalimce işlem yapılamaz.
+ 2.Bir hayvan öldürülmesi zorunlu olursa;bu bir anda,acı çektirmeden ve
+ korkutmadan yapılmalıdır.
+Madde 4-1.Yabani türden olan bütün hayvanlar,kendi özel ve doğal çevrelerinde, karada,
+ havada veya suda yaşama ve üreme hakkına sahiptir.
+ 2.Eğitim amacı ile olsa bile,özgürlükten yoksun kılmanın her çeşidi bu hakka
+ aykırıdır.
+Madde 5-1.Geleneksel olarak insanların çevresinde yaşayan bütün hayvanlar uyumlu biçimde
+ türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir.
+ 2.İnsanların kendi çıkarları için bu uyumda ya da bu koşullarda yapacakları her
+ türlü değişiklik bu haklara aykırıdır.
+Madde 6-1.İnsanların yanlarına aldıkları bütün hayvanlar, doğal ömür uzunluklarına uygun
+ sürece yaşama hakkına sahiptir.
+ 2.Bir Hayvanı Terk Etmek Acımasızca ve insanlık dışı Bir Davranıştır.
+Madde 7- Bütün çalışan hayvanlar iş süresinin yoğunluğunun sınırlandırılması,onarıcı ve
+ güçlerini artırıcı beslenme ve dinlenme hakkına sahiptir.
+
+Madde 8- Hayvanlarda fiziksel ya da psikolojik bir acı çektiren deneyler yapmak, hayvan
+ haklarına aykırıdır.Tıbbi bilimsel,ticari ve başka biçimlerdeki her türlü deneyler
+ için de böyledir.
+Madde 9-Hayvan beslemek için yetiştirilmişse;bakılmalı,barındırılmalı,taşınmalı,ölümü de
+ korkutmadan ve acı çektirmeden yapılmalıdır.
+Madde10-1.Hayvanlardan insanın eğlencesi olsun diye yararlanılmaz.
+ 2.Hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan
+ onuruna aykırıdır.
+Madde11-1.Zorunluluk olmaksızın bir hayvanın öldürülmesi demek olan her davranış,bir
+ "biocide" yani yaşama karşı suçtur.
+Madde 12-1 Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir "genocide"
+ yani türe karşı suçtur.
+ 2.Doğal çevrenin kirletilmesi ve yıkılıp yok edilmesinin sonu "genocide",soykırıma
+ varır.
+Madde 13-1.Hayvanın ölüsüne de saygı göstermek gerekir.
+ 2. Hayvan haklarına saldırıyı göstermek amacı gütseler bile hayvanların
+ öldürüldüğü şiddet sahneleri sinema ve televizyonlarda yasaklanmalıdır.
+
+Madde 14-1.Hayvanları savunma ve koruma kuruluşları,hükümet düzeyinde temsil
+ olunmalıdır.
+ 2.Hayvan hakları da insan hakları gibi yasa ile korunmalıdır</string>
+</resources>

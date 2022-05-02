@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.bilgi.BilgiFragment"
+        >
+
+        <ImageView
+            android:id="@+id/imageHak"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="68dp"
+            android:src="@drawable/hayvan3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageceza"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="68dp"
+            android:src="@drawable/hayvan2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texthakbildiri"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageceza2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="68dp"
+            android:src="@drawable/hayvan4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textcezabildiri"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageceza3"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="68dp"
+            android:src="@drawable/hayvan1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textkorumabildiri"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageceza4"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="68dp"
+            android:src="@drawable/hayvan5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textyardimbildiri"></ImageView>
+
+        <TextView
+            android:id="@+id/texthak"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:onClick="hakClick"
+            android:text="Hayvan Hakları Bildirgesi"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageHak" />
+
+
+
+        <TextView
+            android:id="@+id/texthakbildiri"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="123"
+            android:textAlignment="center"
+            android:textColor="#5C4D4D"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texthak" />
+
+
+        <TextView
+            android:id="@+id/textcezabildiri"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="123"
+            android:textAlignment="center"
+            android:textColor="#5C4D4D"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textceza" />
+
+        <TextView
+            android:id="@+id/textkorumabildiri"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="123"
+            android:textAlignment="center"
+            android:textColor="#5C4D4D"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textkoruma" />
+
+        <TextView
+            android:id="@+id/textyardimbildiri"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="300dp"
+            android:text="123"
+            android:textAlignment="center"
+            android:textColor="#5C4D4D"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textyardim" />
+
+        <TextView
+            android:id="@+id/textprojebildiri"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="65dp"
+            android:text="123"
+            android:textAlignment="center"
+            android:textColor="#5C4D4D"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textproje" />
+
+        <TextView
+            android:id="@+id/textceza"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="Hayvana Şiddet Cezaları"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageceza" />
+
+        <TextView
+            android:id="@+id/textkoruma"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="Hayvanları Korumak İçin Ne Yapmalıyız"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageceza2" />
+
+        <TextView
+            android:id="@+id/textyardim"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="Sokak Hayvanlarına Yardım Etmenin 10 Yolu"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageceza3" />
+
+        <TextView
+            android:id="@+id/textproje"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="45dp"
+            android:text="Bir Kap Su Projesi"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageceza4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
