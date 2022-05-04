@@ -5,248 +5,359 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.bilgi.BilgiFragment"
+        android:layout_margin="20dp"
         >
 
-        <ImageView
-            android:id="@+id/imageHak"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="68dp"
-            android:src="@drawable/hayvan3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
 
-        <ImageView
-            android:id="@+id/imageceza"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="68dp"
-            android:src="@drawable/hayvan2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texthakbildiri"></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageceza2"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="68dp"
-            android:src="@drawable/hayvan4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textcezabildiri"></ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hayvan3"></ImageView>
 
-        <ImageView
-            android:id="@+id/imageceza3"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="68dp"
-            android:src="@drawable/hayvan1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textkorumabildiri"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Hayvan Hakları Bildirgesi"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
 
-        <ImageView
-            android:id="@+id/imageceza4"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="68dp"
-            android:src="@drawable/hayvan5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textyardimbildiri"></ImageView>
+                <LinearLayout
+                    android:id="@+id/expandableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
-        <TextView
-            android:id="@+id/texthak"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:onClick="hakClick"
-            android:text="Hayvan Hakları Bildirgesi"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageHak" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                        android:textColor="#000000"
+                        android:textSize="15sp"></TextView>
 
 
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"></View>
 
-        <TextView
-            android:id="@+id/texthakbildiri"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:text="123"
-            android:textAlignment="center"
-            android:textColor="#5C4D4D"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.475"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texthak" />
+                </LinearLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#88888888"></View>
 
-        <TextView
-            android:id="@+id/textcezabildiri"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:text="123"
-            android:textAlignment="center"
-            android:textColor="#5C4D4D"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textceza" />
+                <Button
+                    android:id="@+id/btnExpand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="130dp"
+                    android:text="OKU"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/ic_ok"></Button>
 
-        <TextView
-            android:id="@+id/textkorumabildiri"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:text="123"
-            android:textAlignment="center"
-            android:textColor="#5C4D4D"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textkoruma" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textyardimbildiri"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginBottom="300dp"
-            android:text="123"
-            android:textAlignment="center"
-            android:textColor="#5C4D4D"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textyardim" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/hayvan2"
+                        android:scaleType="centerCrop"></ImageView>
 
-        <TextView
-            android:id="@+id/textprojebildiri"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginBottom="65dp"
-            android:text="123"
-            android:textAlignment="center"
-            android:textColor="#5C4D4D"
-            android:textSize="18sp"
-            android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textproje" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Hayvan Şiddet Cezaları"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
 
-        <TextView
-            android:id="@+id/textceza"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:text="Hayvana Şiddet Cezaları"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageceza" />
+                    <LinearLayout
+                        android:id="@+id/expandableLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
 
-        <TextView
-            android:id="@+id/textkoruma"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:text="Hayvanları Korumak İçin Ne Yapmalıyız"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.484"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageceza2" />
-
-        <TextView
-            android:id="@+id/textyardim"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:text="Sokak Hayvanlarına Yardım Etmenin 10 Yolu"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.484"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageceza3" />
-
-        <TextView
-            android:id="@+id/textproje"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="45dp"
-            android:text="Bir Kap Su Projesi"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageceza4" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                            android:textColor="#000000"
+                            android:textSize="15sp"></TextView>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"></View>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="#88888888"></View>
+
+                    <Button
+                        android:id="@+id/btnExpand2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="130dp"
+                        android:text="OKU"
+                        android:textColor="@color/white"
+                        app:icon="@drawable/ic_ok"></Button>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/hayvan4"
+                            android:scaleType="centerCrop"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Hayvanları Korumak İçin Ne Yapmalıyız ?"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold"></TextView>
+
+                        <LinearLayout
+                            android:id="@+id/expandableLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                                android:textColor="#000000"
+                                android:textSize="15sp"></TextView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"></View>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="#88888888"></View>
+
+                        <Button
+                            android:id="@+id/btnExpand3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="130dp"
+                            android:text="OKU"
+                            android:textColor="@color/white"
+                            app:icon="@drawable/ic_ok"></Button>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/hayvan1"
+                                android:scaleType="centerCrop"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Sokak Hayvanlarına Yardım Etmenin 10 yolu"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:textStyle="bold"></TextView>
+
+                            <LinearLayout
+                                android:id="@+id/expandableLayout4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"></TextView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginEnd="15dp"></View>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:background="#88888888"></View>
+
+                            <Button
+                                android:id="@+id/btnExpand4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="130dp"
+                                android:text="OKU"
+                                android:textColor="@color/white"
+                                app:icon="@drawable/ic_ok"></Button>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/hayvan5"
+                                android:scaleType="centerCrop"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="120dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Bir Kap Su Projesi"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:textStyle="bold"></TextView>
+
+                            <LinearLayout
+                                android:id="@+id/expandableLayout5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                                    android:textColor="#000000"
+                                    android:textSize="15sp"></TextView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginEnd="15dp"></View>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:background="#88888888"></View>
+
+                            <Button
+                                android:id="@+id/btnExpand5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="130dp"
+                                android:text="OKU"
+                                android:textColor="@color/white"
+                                app:icon="@drawable/ic_ok"
+                                android:layout_marginBottom="75dp"
+                                ></Button>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
 </ScrollView>
+
+
