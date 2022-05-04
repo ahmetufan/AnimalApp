@@ -10,16 +10,16 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.ahmet.kotlinanimalapp.R
 import com.ahmet.kotlinanimalapp.databinding.FragmentDashboardBinding
+import com.ahmet.kotlinanimalapp.model.Model
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class DashboardFragment : Fragment() {
+    lateinit var models: ArrayList<Model>
+
 
     private var _binding: FragmentDashboardBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
-
 
 
     override fun onCreateView(
@@ -30,7 +30,13 @@ class DashboardFragment : Fragment() {
         val dashboardViewModel =
             ViewModelProvider(this).get(DashboardViewModel::class.java)
 
-        _binding = com.ahmet.kotlinanimalapp.databinding.FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = com.ahmet.kotlinanimalapp.databinding.FragmentDashboardBinding.inflate(
+            inflater,
+            container,
+            false
+        )
+
+
         val root: View = binding.root
 
         dashboardViewModel.text.observe(viewLifecycleOwner) {
@@ -38,21 +44,23 @@ class DashboardFragment : Fragment() {
         return root
 
 
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        arguments?.let {
-            val gelenisim=DashboardFragmentArgs.fromBundle(it).isim
+        models = ArrayList<Model>()
 
-            if (gelenisim != null) {
-                imagetext.setImageResource(gelenisim.image)
-                textveteriner.text=gelenisim.veteriner
-                textmama.text=gelenisim.yemek
-                textemizlik.text=gelenisim.temizlik
-                textsevgi.text=gelenisim.sevgi
+
+
+        arguments?.let {
+            val gelenisim = DashboardFragmentArgs.fromBundle(it).isim
+
+              imagetext.setImageResource(gelenisim!!.image)
+              textveteriner.text = gelenisim!!.veteriner
+              textmama.text = gelenisim!!.yemek
+              textemizlik.text = gelenisim!!.temizlik
+              textsevgi.text = gelenisim!!.sevgi
 
                 imageView2.setImageResource(R.drawable.veteriner)
                 imageView3.setImageResource(R.drawable.sevgi)
@@ -66,9 +74,6 @@ class DashboardFragment : Fragment() {
 
 
 
-
-
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()

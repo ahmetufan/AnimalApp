@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.bilgi.BilgiFragment"
@@ -16,8 +15,12 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp">
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardUseCompatPadding="true"
+            android:elevation="3dp"
+            app:cardCornerRadius="10dp"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -33,7 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="85dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="8dp"
                     android:text="Hayvan Hakları Bildirgesi"
                     android:textColor="#000000"
@@ -46,13 +49,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:orientation="vertical"
-                    android:visibility="gone">
+                    >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                        android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi \n1.Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. \n2.Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan, öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez. Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma ve korunma hakları vardır. \n3.Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. \n4.Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. \n5.Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. \n6.İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. \n7.Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. \n8.Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. \n9.Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. \n10.Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. \n11.Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. \n12.Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. \n13.Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. \n14.Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır. Hayvan hakları da insan hakları gibi yasayla KORUNMALIDIR."
                         android:textColor="#000000"
                         android:textSize="15sp"></TextView>
 
@@ -78,7 +81,7 @@
                     android:id="@+id/btnExpand"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:layout_marginStart="130dp"
+                    android:layout_gravity="center"
                     android:text="OKU"
                     android:textColor="@color/white"
                     app:icon="@drawable/ic_ok"></Button>
@@ -92,14 +95,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:src="@drawable/hayvan2"
-                        android:scaleType="centerCrop"></ImageView>
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="20dp"
+                        ></ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="85dp"
+                        android:layout_gravity="center"
                         android:layout_marginTop="8dp"
-                        android:text="Hayvan Şiddet Cezaları"
+                        android:text="Hayvana Şiddet Cezaları"
                         android:textColor="#000000"
                         android:textSize="18sp"
                         android:textStyle="bold"></TextView>
@@ -110,13 +115,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:orientation="vertical"
-                        android:visibility="gone">
+                        >
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                            android:textAlignment="center"
+                            android:text="İDARİ PARA CEZALARI\n Kedi ve köpek sahiplerinin dijital kimliklendirme yöntemiyle hayvanlarını kayıt altına almaması halinde hayvan başına 1200 TL para cezası verilecek.\n Hayvanların sahiplenilmesi ve bakımı ile ilgili yasaklara ve yükümlülüklere uymayan ve alınması gereken önlemleri almayanlara hayvan başına kesilen para cezası tutarı 60 TL’den 1000 TL’ye çıkarılıyor.\n Ev hayvanı satış yerlerinde kedi ve köpek bulundurulmasına ilişkin hükme aykırı hareket edenlere, hayvan başına 500 TL idari para cezası kesilecek.\n Düzenlemeyle bir hayvan neslini yok edecek müdahalede bulunanlara hayvan başına 10 bin TL \n Hayvana tıbbi amaçlar dışında, türüne ve etolojik özelliklerine aykırı hale getirecek şekilde ve dozda hormon ve ilaç vermek, çeşitli maddelerle doping yapmak ile hayvanların türlerine has davranış ve fiziki özelliklerini yapay yöntemlerle değiştirmek fiilleri için idari para cezası tutarı 1200 TL’den 4 bin 500 TL’ye çıkarılıyor.\n Hayvan deneyleri konusunda kurallara uymayanlara hayvan başına 1200 TL’den, yetkisi olmadığı halde hayvan deneyi yapanlara ise hayvan başına 4 bin 500 TL idari para cezası öngörülüyor.\n Hayvan satışı sırasında hayvanların sağlıklarının iyi, barındırıldıkları yerin temiz ve sağlık şartlarına uygun olması zorunluluğunu ihlal edenlere hayvan başına 500, hayvanların ticari amaçla film çekimi ve reklam için kullanılmasıyla ilgili hususları ihlal edenlere ise 5 bin TL para cezası verilecek.\n Hayvanları, doğal kapasitesini veya gücünü aşacak şekilde veya yaralanmasına, gereksiz acı çekmesine, kötü alışkanlıklara özendirilmesine neden olacak yöntemlerle eğitenlere 5 bin 500 TL ceza kesilecek."
                             android:textColor="#000000"
                             android:textSize="15sp"></TextView>
 
@@ -142,7 +148,7 @@
                         android:id="@+id/btnExpand2"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:layout_marginStart="130dp"
+                        android:layout_gravity="center"
                         android:text="OKU"
                         android:textColor="@color/white"
                         app:icon="@drawable/ic_ok"></Button>
@@ -156,12 +162,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:src="@drawable/hayvan4"
-                            android:scaleType="centerCrop"></ImageView>
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="20dp"
+                            ></ImageView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="35dp"
+                            android:layout_gravity="center"
                             android:layout_marginTop="8dp"
                             android:text="Hayvanları Korumak İçin Ne Yapmalıyız ?"
                             android:textColor="#000000"
@@ -174,13 +182,14 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
                             android:orientation="vertical"
-                            android:visibility="gone">
+                            >
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                                android:textAlignment="center"
+                                android:text=" Hayvanları kısırlaştırın\n Her yıl milyonlarca köpek ve kedi hayvan barınaklarında ölüme terk ediliyor. Kısırlaştırma hayvanların sayısını azaltarak bunun önüne geçiyor. Ayrıca evcil hayvanınız varsa da kısırlaştırmak ömürlerini uzatıyor.\n \n Petshop’dan parayla hayvan satın almayın\n Parayla hayvan satın almak bu ticarete destek vermek anlamına geliyor. Bunun yerine barınaklardan hayvan sahiplenin. Hayvanları fazla doğuma zorlayan ve sağlıksız şartlarda yaşatan petshoplara göz yummayın.\n \n Bir hayvanı asla hediye etmeyin\n Terk edilen hayvanların birçoğu gerekli hazırlıklar yapılmadan hediye edildi. Bir evcil hayvan sahiplenmeden önce bunu ailenizle konuşun ve hazırlıklı olun.\n \nSokak hayvanlarına sahip çıkın\n Sokak hayvanlarının yaşadığı hastalıklara ve açlığa göz yummayın ve harekete geçin. En yakın veterinere veya devlete bağlı sokak hayvan kliniğine başvurarak yardımcı olun. Elinizden geldiğince mama alarak beslenmelerine destek olmaya çalışın.\n \nBarınaklarda gönüllü olarak çalışın\n Sokak hayvanları hepimizin sorumluluğunda. Barınaklara gidip hayvanları sevmek, beslemek ve gereken temizliklere yardım etmek oldukça önemli. Gönüllü olamıyorsanız bağış yapabilirsiniz\n\n Hayvanlara yapılan zulme göz yummayın\n Herhangi bir işkenceye veya istismara tanık olursanız bunu yetkililere bildirin. İnsanlık dışı olan bu caniliğe, hayvanlara yönelik şiddete göz yummayın. Köpek dövüşü, horoz dövüşü gibi yasa dışı işlemleri bildirmekten çekinmeyin.\n \nEvcil hayvanınızın güvenliğini sağlayın\n Köpekler ve kedilerin tasmalarına iletişim bilgilerini eklediğinizden emin olun. Her ne kadar evde yaşasalar da tedbirli olmakta fayda var. Acil veya beklenmedik bir durumda bu şekilde eve geri dönebilirler.\n \nDoğal temizleyiciler kullanın\n  Köpeğiniz varsa bir köpek eğitim kursuna katılın\n Köpeğinizle doğru iletişim kurmayı öğrenmek ve dostluğunuzu pekiştirmek için bir kursa katılın.\n\n Kendinizi geliştirin\n Evcil hayvanınıza en iyi şekilde bakmak için bilgilendirici kitaplar okuyun ve araştırmalar yapın.\n\n Sebze tüketimine ağırlık verin\n Bitki temelli bir diyet benimsemek fabrika çiftçiliğinin hayvanlar üzerindeki olumsuz etkisini azaltmaya yardımcı oluyor ve kanser ve obezite riskini büyük ölçüde azaltıyor.\n \nHayvan fabrikaları hakkında bilgiler edinin\n Fabrika çiftçiliği ve et ve süt ürünlerinin sağlığınız üzerindeki etkileri hakkında kitaplar okuyun ve bu konuda bilgilenin.\n \n Gerçek deriden yapılan ürünleri satın almayın\n Deri, et için yetiştirilen sığırların yan ürün değerinin %50’sini oluşturuyor. Saten/kumaş elbise ayakkabısı, sentetik koşu ve yürüyüş ayakkabısı, kanvas spor ayakkabı gibi birçok alternatif gerçek deriye bir alternatif sunuyor."
                                 android:textColor="#000000"
                                 android:textSize="15sp"></TextView>
 
@@ -206,7 +215,7 @@
                             android:id="@+id/btnExpand3"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
-                            android:layout_marginStart="130dp"
+                            android:layout_gravity="center"
                             android:text="OKU"
                             android:textColor="@color/white"
                             app:icon="@drawable/ic_ok"></Button>
@@ -220,12 +229,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="150dp"
                                 android:src="@drawable/hayvan1"
-                                android:scaleType="centerCrop"></ImageView>
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="20dp"
+                                ></ImageView>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="25dp"
+                                android:layout_gravity="center"
                                 android:layout_marginTop="8dp"
                                 android:text="Sokak Hayvanlarına Yardım Etmenin 10 yolu"
                                 android:textColor="#000000"
@@ -238,13 +249,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
                                 android:orientation="vertical"
-                                android:visibility="gone">
+                               >
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:textAlignment="center"
                                     android:layout_marginTop="8dp"
-                                    android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                                    android:text="Öncelikle Hayvan Sahiplenin\n Sokak hayvanı sahiplenmek hem hayvanların daha iyi koşullarda yaşamasını sağlamak hem de ailenize yeni ve sevimli bir birey eklemek demektir. Biz insanlar, hayvanların doğasına büyük ölçüde zarar veriyoruz. Bu nedenle de onlara güvenli ve huzurlu bir yuva sağlamak için evimizin kapısını açabiliriz. Sokakta gördüğünüz sahipsiz ya da zor durumda olan kedi ya da köpekleri, maddi ve manevi olarak hazırsanız sahiplenebilirsiniz. Bunların yanında sosyal medyadaki sahiplendirme sayfalarıyla iletişime geçebilir ya da barınakları ziyaret edebilirsiniz.\n\n Sahiplendirme Ağına Yardım Edin\n Hayvan sahiplenmek, özveri ve bilinç isteyen ciddi bir karar. Siz de herhangi bir özel sebepten ötürü hayvan sahiplenemiyorsanız sahiplendirme çalışmalarına yardım edebilirsiniz. Özellikle yukarıda da belirttiğimiz gibi sosyal medya üzerinden çeşitli duyurular yaparak ya da hayvan haklarıyla ilgilenen topluluklarla iletişime geçerek sokak hayvanı sahiplendirme ile ilgili çalışmalar yapabilir ve birçok hayvanın hayatına dokunabilirsiniz.\n\n Barınaktaki Hayvanların Koruyuculuğunu Üstlenin\n Sahiplenememe durumunda yapabileceğiniz bir diğer güzel şey ise sık sık hayvan barınaklarını ziyaret etmek! Barınaklarda sevgiye, ilgiye muhtaç birçok hayvan dostumuz var. Onları düzenli olarak ziyaret edip mama götürebilirsiniz. Ayrıca direkt olarak bir ya da birden çok hayvanın koruyuculuğunu üstlenerek masraflarını karşılayabilirsiniz.\n\n Yanınızda Mutlaka Mama Bulundurun\n Sokak hayvanları özellikle şehir içinde avlanmakta ve yiyecek bir şeyler bulmakta zorluk çekiyor. Bu sebeple sokak hayvanları için mama çok önemli ve bu mamalar onların zor koşullarla mücadele etmesine yardımcı oluyor. Onlara bu konuda yardım edebilmek için yanınızda her zaman biraz kuru mama bulundurabilirsiniz. Böylece yardıma ihtiyacı olan bir hayvan gördüğünüzde hemen müdahale edebilirsiniz.\n\n Bulunduğunuz Bölgedeki Veterinerleri Bilin\n Sokakta yaralı ya da hasta bir hayvan gördüğünüzde nasıl davranacağınızı bilmek, en az yanınızda mama taşımak kadar önemli. Bu nedenle en doğru şekilde müdahale edebilmek için en azından yaşadığınız çevredeki veterinerleri keşfedin. Onlardan fikir alın, en yakınınızdakilerle iletişimde kalın.\n\n Yemek Artıklarını Ayırın\n Sokak hayvanları için mama almak ya da barınaklara yardım etmek bütçenizi zorluyorsa kedi ve köpeklerin yiyebileceği yemeklerin artıklarını çöpe atmayın. Kapınızın önüne koyacağınız bir kap yemek, sokak hayvanlarını besleme noktasında çok işe yarar. Ek olarak özellikle havaların çok sıcak olduğu yaz günlerinde kapınızın önüne bir kap su koymayı da unutmayın. Bu sayede susayan ama yaz sıcağında su bulamayan sokak hayvanlarına da yardım etmiş olursunuz.\n\n ALO 153 Hattını Arayın\n Zor durumda olan hayvanlara yardım etmenin bir diğer yolu da acil yardım hattını aramak. ALO 153’ü ya da bulunduğunuz şehirdeki sokak hayvanları için yardım hattını aradığınız zaman belediye ekipleri, belirttiğiniz adrese gelip sokak hayvanını alır ve tedavi için yardımcı olurlar.\n\n Güvendiğiniz Bir Kuruma Bağış Yapın\n Hayvan barınaklarının çoğu gönüllülük esasına dayanarak çalışır. Yani yapacağınız yardımlara ihtiyaçları vardır. Bu noktada doğrudan sokak hayvanları barınağı çalışanlarıyla iletişim kuracağınız gibi güvendiğiniz bir kuruma bağış da yapabilirsiniz. Fakat bağış yaptıktan sonra verdiğiniz paranın nereye harcandığını mutlaka denetleyin.\n\n Hayvan Hakları için Çalışın\n Ülkemizde hayvan hakları için çalışan birçok örgüt ve topluluk var. Bu topluluklara katılarak hayvan haklarıyla ilgili mücadele edilen konularda çalışabilir, sokaktaki dostlarımızın yaşamlarını iyileştirmek için kolektif bir şekilde projeler üretebilirsiniz.\n\n Sokakları Hayvanlara Uygun Bir Hale Getirin\n En önemli noktalardan biri de sokakları, hayvanların yaşam şartlarına bir nebze olsa da uygun hale getirmek. Sokaklara, kışın soğuk havalarda barınabilmeleri için kulübeler yapmak ya da çok fazla görünür olmayan noktalara yemek ve su bırakmak ise bunun en kolay yolu."
                                     android:textColor="#000000"
                                     android:textSize="15sp"></TextView>
 
@@ -270,7 +282,7 @@
                                 android:id="@+id/btnExpand4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="40dp"
-                                android:layout_marginStart="130dp"
+                                android:layout_gravity="center"
                                 android:text="OKU"
                                 android:textColor="@color/white"
                                 app:icon="@drawable/ic_ok"></Button>
@@ -286,12 +298,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="150dp"
                                 android:src="@drawable/hayvan5"
-                                android:scaleType="centerCrop"></ImageView>
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="20dp"
+                                ></ImageView>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="120dp"
+                                android:layout_gravity="center"
                                 android:layout_marginTop="8dp"
                                 android:text="Bir Kap Su Projesi"
                                 android:textColor="#000000"
@@ -304,13 +318,14 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
                                 android:orientation="vertical"
-                                android:visibility="gone">
+                                >
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="8dp"
-                                    android:text="Hayvan Hakları Bildirgesi 15 Ekim 1978'de Paris UNESCO evinde ilan edilen Hayvan Hakları Evrensel Bildirisi 1.       Bütün hayvanlar yaşam önünde eşit doğarlar ve aynı var olma hakkına sahiptirler. 2.       Bütün hayvanlar saygı görme hakkına sahiptir. Bir hayvan türü olan insan , öbür hayvanları yok edemez. Bu hakkı çiğneyerek onları sömüremez.Bilgilerini hayvanların hizmetine sunmakla görevlidir. Bütün hayvanların insanca gözetilme, bakılma, ve korunma hakları vardır. 3.       Hiçbir hayvana kötü davranılamaz, acımasız ve zalimce eylem yapılamaz. Bir hayvanın öldürülmesi zorunlu olursa, bu bir anda, acı çektirmeden ve korkutmadan yapılmalıdır. 4.       Yabani türden olan bütün hayvanlar, kendi özel doğal çevrelerinde karada, havada ve suda yaşama ve üretme hakkına sahiptir. Eğitim amaçlı olsa bile özgürlükten yoksun kılmanın her çeşidi bu hakka aykırıdır. 5.       Geleneksel olarak insanların çevresinde yaşayan bir türden olan bütün hayvanlar uyumlu bir biçimde türüne özgü yaşam koşulları ve özgürlük içinde yaşama ve üreme hakkına sahiptir. 6.       İnsanların yanlarına aldıkları bütün hayvanlar doğal ömür uzunluklarına uygun sürece yaşama hakkına sahiptir. Bir hayvanı terk etmek acımasız ve aşağılık bir davranıştır. 7.       Bütün çalışan hayvanlar iş süresi ve yoğunluğunun sınırlandırılması ve güçlerini artırıcı bir beslenme ve dinlenme hakkına sahiptir. 8.       Hayvanlara fiziki ya da psikolojik bir acı çektiren deneyler yapmak hayvan haklarına aykırıdır. Tıbbi, bilimsel, ticari ve başkaca biçimlerdeki her türlü deneyler için de durum böyledir. 9.       Hayvan beslenmek için yetiştirilmişse de bakılmalı, barındırılmalı, taşınmalı, ölümü de acı çektirmeden ve korkutmadan olmalıdır. 10.    Hayvanlardan insanların eğlencesi olsun diye yararlanılamaz, hayvanların seyrettirilmesi ve hayvanlardan yararlanılan gösteriler hayvan onuruna aykırıdır. 11.    Zorunluluk olmaksızın bir hayvanın öldürülmesi yaşama karşı suçtur. 12.    Çok sayıda yabani hayvanın öldürülmesi demek olan her davranış bir soykırım, yani bir suçtur. 13.    Hayvan ölümüne de saygı göstermek gerekir. Hayvanın öldürüldüğü şiddet sahneleri sinema ve televizyonda yasaklanmalıdır. 14.   Hayvanları koruma ve savunma kuralları, hükümet düzeyinde temsil olunmalıdır.Hayvan hakları da insan hakları gibi yasayla korunmalıdır."
+                                    android:textAlignment="center"
+                                    android:text="Sokak hayvanlarına yönelik yapılan sosyal sorumluluk projelerinden bir diğeri ise; “Bir Kap Su” ismiyle gerçekleştirilen projedir. Bu proje, Hayvan Hakları Federasyonu tarafından sıcak yaz günlerinde sokak hayvanlarının susuzluk çekmemeleri adına “Su Her Canlı İçin Yaşamdır” sloganı ile başlatılmıştır. Bu proje kapsamında sokak hayvanları ile ilgili bir duyarlılık içerisinde olan vatandaşlardan evlerinin önlerine bir kap su bırakmaları istenmektedir.\n\n Eğer sokak hayvanlarının düşünen ve onlara bu konularda duyarlılık gösteren bir vatandaşsanız, onları korumak amacı ile bakım evlerini, petshopları ve hayvanat bahçelerini ziyaret etmeyi ve oradaki hayvanlar için bir kap su koyulmamışsa koyulmasını sağlayın.\n\n Ayrıca yaban hayvanları için su yalakları yaptırılabilmektedir. Sokaklarda yaşayan dostlarınız için de ayrıca evinizin kapısının önüne bir kap su koymayı ihmal etmeyin."
                                     android:textColor="#000000"
                                     android:textSize="15sp"></TextView>
 
@@ -336,7 +351,7 @@
                                 android:id="@+id/btnExpand5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="40dp"
-                                android:layout_marginStart="130dp"
+                                android:layout_gravity="center"
                                 android:text="OKU"
                                 android:textColor="@color/white"
                                 app:icon="@drawable/ic_ok"

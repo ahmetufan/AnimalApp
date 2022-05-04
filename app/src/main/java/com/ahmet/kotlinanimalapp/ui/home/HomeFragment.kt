@@ -15,7 +15,7 @@ import com.ahmet.kotlinanimalapp.databinding.FragmentHomeBinding
 import com.ahmet.kotlinanimalapp.model.Model
 
 class HomeFragment : Fragment() {
-    private lateinit var models: ArrayList<Model>
+     lateinit var models: ArrayList<Model>
     private lateinit var adaptery: Adaptery
 
 

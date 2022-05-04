@@ -25,7 +25,9 @@
             app:destination="@id/navigation_home" />
         <argument
             android:name="isim"
-            app:argType="com.ahmet.kotlinanimalapp.model.Model" />
+            app:argType="com.ahmet.kotlinanimalapp.model.Model"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </fragment>
 
     <fragment
