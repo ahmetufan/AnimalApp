@@ -56,21 +56,38 @@ class DashboardFragment : Fragment() {
         arguments?.let {
             val gelenisim = DashboardFragmentArgs.fromBundle(it).isim
 
-              imagetext.setImageResource(gelenisim!!.image)
-              textveteriner.text = gelenisim!!.veteriner
-              textmama.text = gelenisim!!.yemek
-              textemizlik.text = gelenisim!!.temizlik
-              textsevgi.text = gelenisim!!.sevgi
+            if (gelenisim != null) {
+
+                imagetext.setImageResource(gelenisim.image)
+                textveteriner.text = gelenisim.veteriner
+                textmama.text = gelenisim.yemek
+                textemizlik.text = gelenisim.temizlik
+                textsevgi.text = gelenisim.sevgi
 
                 imageView2.setImageResource(R.drawable.veteriner)
                 imageView3.setImageResource(R.drawable.sevgi)
                 imageView4.setImageResource(R.drawable.temizlik)
                 imageView5.setImageResource(R.drawable.mamama)
                 imageView6.setImageResource(R.drawable.kalp)
+            } else {
+
+                imagetext.setImageResource(R.drawable.hayvan6)
+                textveteriner.text = ""
+                textmama.text = ""
+                textemizlik.text = ""
+                textsevgi.text = ""
+
+                imageView2.setImageResource(R.drawable.veteriner)
+                imageView3.setImageResource(R.drawable.sevgi)
+                imageView4.setImageResource(R.drawable.temizlik)
+                imageView5.setImageResource(R.drawable.mamama)
+                imageView6.setImageResource(R.drawable.kalp)
+
             }
-
-
         }
+
+
+    }
 
 
 

@@ -41,9 +41,12 @@ class BilgiFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-      /*
+
+        expandable()
+    }
+    private fun expandable(){
         btnExpand.setOnClickListener {
-            if (expandableLayout.visibility == View.VISIBLE) {
+            if (expandableLayout.visibility == View.GONE) {
                 TransitionManager.beginDelayedTransition(cardview, AutoTransition())
                 expandableLayout.visibility = View.VISIBLE
                 btnExpand.text = "KAPAT"
@@ -53,8 +56,51 @@ class BilgiFragment : Fragment() {
                 btnExpand.text = "OKU"
             }
         }
+        btnExpand2.setOnClickListener {
+            if (expandableLayout2.visibility == View.GONE) {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout2.visibility = View.VISIBLE
+                btnExpand2.text = "KAPAT"
+            } else {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout2.visibility = View.GONE
+                btnExpand2.text = "OKU"
+            }
+        }
+        btnExpand3.setOnClickListener {
+            if (expandableLayout3.visibility == View.GONE) {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout3.visibility = View.VISIBLE
+                btnExpand3.text = "KAPAT"
+            } else {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout3.visibility = View.GONE
+                btnExpand3.text = "OKU"
+            }
+        }
+        btnExpand4.setOnClickListener {
+            if (expandableLayout4.visibility == View.GONE) {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout4.visibility = View.VISIBLE
+                btnExpand4.text = "KAPAT"
+            } else {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout4.visibility = View.GONE
+                btnExpand4.text = "OKU"
+            }
+        }
+        btnExpand5.setOnClickListener {
+            if (expandableLayout5.visibility == View.GONE) {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout5.visibility = View.VISIBLE
+                btnExpand5.text = "KAPAT"
+            } else {
+                TransitionManager.beginDelayedTransition(cardview, AutoTransition())
+                expandableLayout5.visibility = View.GONE
+                btnExpand5.text = "OKU"
+            }
+        }
 
-       */
     }
 
 

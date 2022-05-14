@@ -16,9 +16,5 @@
         android:icon="@drawable/ic_bilgi"
         android:title="Gerekenler" />
 
-    <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_profile"
-        android:title="Profil" />
 
 </menu>
