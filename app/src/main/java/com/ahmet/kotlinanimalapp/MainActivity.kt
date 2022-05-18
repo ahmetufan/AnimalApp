@@ -26,5 +26,30 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         bottomNavigationView.setupWithNavController(navController)
 
+        bottomNavigationView.setOnItemSelectedListener {
+            when (it.itemId){
+                R.id.navigation_home -> {
+                    title = "Görev Takibi"
+                    navController.navigate(R.id.navigation_home)
+                    true
+                }
+
+                R.id.navigation_dashboard -> {
+                    title = "Personel Listesi"
+                    navController.navigate(R.id.navigation_dashboard)
+                    true
+                }
+                R.id.navigation_bilgi -> {
+                    title = "İşlem Listesi"
+                    navController.navigate(R.id.navigation_bilgi)
+                    true
+                }
+                else -> {
+                    navController.navigate(R.id.navigation_home)
+                    true
+                }
+            }
+        }
+
     }
 }

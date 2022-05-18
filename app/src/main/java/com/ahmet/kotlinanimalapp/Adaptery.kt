@@ -6,12 +6,13 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.ahmet.kotlinanimalapp.databinding.RowBinding
+import com.ahmet.kotlinanimalapp.interfaces.HomeClick
 import com.ahmet.kotlinanimalapp.model.Model
 import com.ahmet.kotlinanimalapp.ui.dashboard.DashboardFragment
 import com.ahmet.kotlinanimalapp.ui.home.HomeFragment
 import com.ahmet.kotlinanimalapp.ui.home.HomeFragmentDirections
 
-class Adaptery(val arraList:ArrayList<Model>) : RecyclerView.Adapter<Adaptery.Holder>() {
+class Adaptery(val arraList:ArrayList<Model>, val homeClick: HomeClick) : RecyclerView.Adapter<Adaptery.Holder>() {
 
     class Holder(val binding:RowBinding) : RecyclerView.ViewHolder (binding.root){
 
@@ -28,10 +29,8 @@ class Adaptery(val arraList:ArrayList<Model>) : RecyclerView.Adapter<Adaptery.Ho
 
 
         holder.itemView.setOnClickListener {
-          val action=HomeFragmentDirections.actionNavigationHomeToNavigationDashboard(arraList[position])
-
-
-            Navigation.findNavController(it).navigate(action)
+            val item = arraList[position]
+            homeClick.itemCLickListener(item)
         }
 
 
