@@ -7,14 +7,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ahmet.kotlinanimalapp.Adaptery
 import com.ahmet.kotlinanimalapp.R
 import com.ahmet.kotlinanimalapp.databinding.FragmentHomeBinding
+import com.ahmet.kotlinanimalapp.interfaces.HomeClick
 import com.ahmet.kotlinanimalapp.model.Model
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), HomeClick {
      lateinit var models: ArrayList<Model>
     private lateinit var adaptery: Adaptery
 
@@ -293,7 +296,7 @@ class HomeFragment : Fragment() {
         models.add(esek)
 
         binding.recyclerView.layoutManager = GridLayoutManager(context, 2)
-        adaptery = Adaptery(models)
+        adaptery = Adaptery(models, this)
         binding.recyclerView.adapter = adaptery
 
 
@@ -302,5 +305,10 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun itemCLickListener(model: Model) {
+        val action=HomeFragmentDirections.actionNavigationHomeToNavigationDashboard(model)
+        findNavController(this).navigate(action)
     }
 }
