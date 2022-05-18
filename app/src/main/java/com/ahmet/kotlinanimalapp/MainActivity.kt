@@ -29,7 +29,9 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId){
                 R.id.navigation_home -> {
-                    title = "Görev Takibi"
+
+
+                    title = "Görev Ta"
                     navController.navigate(R.id.navigation_home)
                     true
                 }
