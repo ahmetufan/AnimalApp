@@ -323,6 +323,7 @@ class HomeFragment : Fragment(), HomeClick {
         "Küçük boyutlarına ve güzel görünüşlerine rağmen,  kertenkeleler dünya üzerindeki en dayanıklı sürüngenlerden biridir. Ancak, diğer bütün egzotik hayvanlarda da olduğu gibi,  kertenkelelerin hayatta kalabilmeleri için çok kontrollü bir ortamda yaşamaya ihtiyaçları vardır. ")
         models.add(kertenkele)
 
+
         binding.recyclerView.layoutManager = GridLayoutManager(context, 2)
         adaptery = Adaptery(models, this)
         binding.recyclerView.adapter = adaptery
