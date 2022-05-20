@@ -37,6 +37,9 @@ android {
 }
 
 dependencies {
+    def retrofitVersion = '2.7.1'
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation 'com.google.android.material:material:1.6.0'
 
 
