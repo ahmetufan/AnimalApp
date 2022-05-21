@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment) as NavHostFragment
         val navController = navHostFragment.navController
@@ -29,18 +31,18 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId){
                 R.id.navigation_home -> {
-                    title = "Görev Takibi"
+                    title = "Hayvan Rehberi"
                     navController.navigate(R.id.navigation_home)
                     true
                 }
 
                 R.id.navigation_dashboard -> {
-                    title = "Personel Listesi"
+                    title = "Bakım"
                     navController.navigate(R.id.navigation_dashboard)
                     true
                 }
                 R.id.navigation_bilgi -> {
-                    title = "İşlem Listesi"
+                    title = "Gerekenler"
                     navController.navigate(R.id.navigation_bilgi)
                     true
                 }

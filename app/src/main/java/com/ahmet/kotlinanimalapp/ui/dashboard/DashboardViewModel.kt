@@ -1,13 +1,25 @@
 package com.ahmet.kotlinanimalapp.ui.dashboard
 
-import androidx.lifecycle.LiveData
+import android.app.Application
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import com.ahmet.kotlinanimalapp.BaseViewModel
+import com.ahmet.kotlinanimalapp.service.AnimalDatabase
+import com.ahmet.kotlinanimalapp.model.Model2
+import kotlinx.coroutines.launch
 
-class DashboardViewModel : ViewModel() {
+class DashboardViewModel (application: Application): BaseViewModel(application) {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+    val details=MutableLiveData<Model2>()
+
+    fun getDetailRoom(id:Int) {
+
+        launch {
+
+            val dao= AnimalDatabase(getApplication()).animalDao2().getAnimal(id)
+
+            details.value=dao
+
+        }
+
     }
-    val text: LiveData<String> = _text
 }

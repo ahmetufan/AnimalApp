@@ -24,10 +24,9 @@
             android:id="@+id/action_navigation_dashboard_to_navigation_home"
             app:destination="@id/navigation_home" />
         <argument
-            android:name="isim"
-            app:argType="com.ahmet.kotlinanimalapp.model.Model"
-            app:nullable="true"
-            android:defaultValue="@null" />
+            android:name="uId"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
 
     <fragment
