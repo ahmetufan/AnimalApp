@@ -39,6 +39,7 @@ android {
 def retrofitVersion = '2.9.0'
 def roomVersion = "2.4.2"
 dependencies {
+<<<<<<< HEAD
 
 
     //RXJAVA
@@ -58,6 +59,11 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation "com.squareup.retrofit2:adapter-rxjava3:2.9.0"
 
+=======
+    def retrofitVersion = '2.7.1'
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+>>>>>>> cc6a4129261902b608435a64bfb62692b9238454
     implementation 'com.google.android.material:material:1.6.0'
 
 
