@@ -47,7 +47,7 @@ class HomeFragment : Fragment(), HomeClick {
 
 
         binding.recyclerView.layoutManager = GridLayoutManager(context, 2)
-        adaptery = Adaptery(arrayListOf(), this)
+        adaptery = Adaptery(arrayListOf(), this,requireContext())
         binding.recyclerView.adapter = adaptery
 
         observeLiveData()

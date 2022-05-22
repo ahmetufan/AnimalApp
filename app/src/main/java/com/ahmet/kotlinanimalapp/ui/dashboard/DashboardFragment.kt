@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.ahmet.kotlinanimalapp.R
 import com.ahmet.kotlinanimalapp.databinding.FragmentDashboardBinding
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class DashboardFragment : Fragment() {
@@ -33,7 +34,6 @@ class DashboardFragment : Fragment() {
             container,
             false
         )
-
 
         val root: View = binding.root
 
@@ -62,10 +62,10 @@ class DashboardFragment : Fragment() {
     private fun observeRoomData() {
 
         viewModel.details.observe(viewLifecycleOwner, Observer { haber ->
-            haber?.let {
 
                 if (haber != null) {
 
+                    Glide.with(requireContext()).load(haber.image_url).into(imagetext)
                     textveteriner.text = haber.veteriner
                     textmama.text = haber.yemek
                     textemizlik.text = haber.temizlik
@@ -87,7 +87,7 @@ class DashboardFragment : Fragment() {
                     textemizlik.text = ""
                     textsevgi.text = ""
                 }
-            }
+
         })
     }
 

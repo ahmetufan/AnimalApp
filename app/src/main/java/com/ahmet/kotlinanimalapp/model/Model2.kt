@@ -18,7 +18,10 @@ data class Model2(
     val temizlik: String?,
 
     @ColumnInfo(name = "sevgi")
-    val sevgi: String?
+    val sevgi: String?,
+
+    @ColumnInfo(name = "image_url")
+    val image_url: String?
 ) {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
