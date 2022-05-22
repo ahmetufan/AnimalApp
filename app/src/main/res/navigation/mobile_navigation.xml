@@ -34,4 +34,9 @@
         android:name="com.ahmet.kotlinanimalapp.ui.bilgi.BilgiFragment"
         android:label="fragment_bilgi"
         tools:layout="@layout/fragment_bilgi" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.ahmet.kotlinanimalapp.ui.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
 </navigation>

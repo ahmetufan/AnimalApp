@@ -41,6 +41,11 @@ class MainActivity : AppCompatActivity() {
                     navController.navigate(R.id.navigation_dashboard)
                     true
                 }
+                R.id.notificationsFragment -> {
+                    title = "Irklar"
+                    navController.navigate(R.id.notificationsFragment)
+                    true
+                }
                 R.id.navigation_bilgi -> {
                     title = "Gerekenler"
                     navController.navigate(R.id.navigation_bilgi)

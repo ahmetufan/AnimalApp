@@ -1,7 +1,6 @@
 package com.ahmet.kotlinanimalapp.ui.home
 
 import android.app.Application
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import com.ahmet.kotlinanimalapp.BaseViewModel
 import com.ahmet.kotlinanimalapp.service.AnimalDatabase
@@ -17,8 +16,8 @@ import kotlinx.coroutines.launch
 class HomeViewModel(application: Application) : BaseViewModel(application) {
     private val animalService= ModelAPIService()
     private val compositDisposable=CompositeDisposable()
-    private var customPreferences =CustomSharedPreferences(getApplication())
-    private var refreshTime = 10 * 60 * 1000 * 1000 * 1000L
+    private var customPreferences = CustomSharedPreferences(getApplication())
+    private var refreshTime = 30 * 60 * 1000 * 1000 * 1000L
 
     val animals=MutableLiveData<List<Model2>> ()
 
@@ -27,13 +26,12 @@ class HomeViewModel(application: Application) : BaseViewModel(application) {
 
         val updateTime = customPreferences.getTime()
         if (updateTime != null && updateTime != 0L && System.nanoTime() - updateTime < refreshTime) {
+
             getDataFromSQLite()
 
-            Toast.makeText(getApplication(), "SQLite", Toast.LENGTH_SHORT).show()
         } else {
 
             getDataFromAPI()
-            Toast.makeText(getApplication(), "API", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -75,9 +73,8 @@ class HomeViewModel(application: Application) : BaseViewModel(application) {
 
             val roomData= AnimalDatabase(getApplication()).animalDao2().getAllAnimal()
             showValue(roomData)
-            Toast.makeText(getApplication(), "SQLite", Toast.LENGTH_SHORT).show()
-        }
 
+        }
     }
 
 

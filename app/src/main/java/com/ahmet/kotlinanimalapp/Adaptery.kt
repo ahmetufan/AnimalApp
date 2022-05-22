@@ -1,7 +1,5 @@
 package com.ahmet.kotlinanimalapp
 
-import android.content.Intent
-import android.text.method.TextKeyListener.clear
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
@@ -9,10 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ahmet.kotlinanimalapp.databinding.RowBinding
 import com.ahmet.kotlinanimalapp.interfaces.HomeClick
 import com.ahmet.kotlinanimalapp.model.Model2
-import com.ahmet.kotlinanimalapp.ui.dashboard.DashboardFragment
-import com.ahmet.kotlinanimalapp.ui.home.HomeFragment
 import com.ahmet.kotlinanimalapp.ui.home.HomeFragmentDirections
-import java.util.Collections.addAll
 
 class Adaptery(val arraList:ArrayList<Model2>, val homeClick: HomeClick) : RecyclerView.Adapter<Adaptery.Holder>() {
 

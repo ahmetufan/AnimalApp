@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AnimalApKotlin/app/src/main/res/drawable/galeri.xml" value="0.177" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AnimalApKotlin/app/src/main/res/layout/fragment_dashboard.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AnimalApKotlin/app/src/main/res/layout/fragment_notifications.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AnimalApKotlin/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AnimalApp2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-<<<<<<< HEAD
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AnimalApp2/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/AnimalApp2/app/src/main/res/layout/row.xml" value="0.20416666666666666" />
-=======
->>>>>>> cc6a4129261902b608435a64bfb62692b9238454
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/KotlinAnimalApp - Kopya (2)/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.156" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/KotlinAnimalApp - Kopya (2)/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/KotlinAnimalApp - Kopya (2)/app/src/main/res/drawable/ic_launcher_background.xml" value="0.156" />
