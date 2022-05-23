@@ -1,6 +1,5 @@
 package com.ahmet.kotlinanimalapp.ui.bilgi
 
-import android.content.Intent
 import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.TransitionManager

@@ -10,9 +10,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.ahmet.kotlinanimalapp.Adaptery
-import com.ahmet.kotlinanimalapp.databinding.FragmentHomeBinding
 import com.ahmet.kotlinanimalapp.interfaces.HomeClick
 import com.ahmet.kotlinanimalapp.model.Model2
+import com.ahmet.kotlinanimalapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment(), HomeClick {
     private lateinit var viewModel:HomeViewModel

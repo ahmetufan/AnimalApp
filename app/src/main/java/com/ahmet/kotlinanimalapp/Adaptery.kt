@@ -5,16 +5,16 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.ahmet.kotlinanimalapp.databinding.RowBinding
 import com.ahmet.kotlinanimalapp.interfaces.HomeClick
 import com.ahmet.kotlinanimalapp.model.Model2
 import com.ahmet.kotlinanimalapp.ui.home.HomeFragmentDirections
+import com.ahmet.kotlinanimalapp.databinding.RowBinding
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.row.view.*
 
 class Adaptery(val arraList:ArrayList<Model2>, val homeClick: HomeClick,private val context:Context) : RecyclerView.Adapter<Adaptery.Holder>() {
 
-    class Holder(val binding:RowBinding) : RecyclerView.ViewHolder (binding.root){
+    class Holder(val binding: RowBinding) : RecyclerView.ViewHolder (binding.root){
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Adaptery.Holder {

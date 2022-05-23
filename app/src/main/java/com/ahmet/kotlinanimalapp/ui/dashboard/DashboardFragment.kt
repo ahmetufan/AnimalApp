@@ -29,10 +29,7 @@ class DashboardFragment : Fragment() {
     ): View {
 
 
-        _binding = com.ahmet.kotlinanimalapp.databinding.FragmentDashboardBinding.inflate(
-            inflater,
-            container,
-            false
+        _binding = FragmentDashboardBinding.inflate(inflater, container, false
         )
 
         val root: View = binding.root
