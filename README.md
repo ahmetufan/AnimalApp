@@ -21,7 +21,7 @@
 •	Material-Components - Material design components like ripple animation, cardView.<br/>
 •	LottieFiles – Splash Screen<br/>
 
-# License<br/>  :page_with_curl:
+# License  :page_with_curl:<br/>
 AnimalApp is available under the MIT license. See the [LICENSE](https://github.com/ahmetufan/AnimalApp/blob/main/LICENSE) file for more info.
 
 
