@@ -13,13 +13,13 @@
 •	ViewModel - UI related data holder, lifecycle aware.<br/>
 •	Navigation Component - handle everything needed for in-app navigation.<br/>
 •	Room - Used for persistance in a SQLite database<br/>
-•	Retrofit - Used to simplify networking<br/>
-•	RxJava - RxJava simplifies complex threading operations, maintaining proper synchronization as you switch seamlessly from thread to thread.<br/>
-•	Coroutines - A coroutine is a concurrency design pattern that you can use on Android to simplify code that executes asynchronously.<br/>
-•	RecyclerView - Used to display the dashboard<br/
-•	Glide - An image loading and caching library for Android focused on smooth scrolling<br/>
-•	Material-Components - Material design components like ripple animation, cardView.<br/>
-•	LottieFiles – Splash Screen<br/>
+•	[Retrofit](https://square.github.io/retrofit/) - Used to simplify networking<br/>
+•	[RxJava](https://www.geeksforgeeks.org/rxjava-for-android/) - RxJava simplifies complex threading operations, maintaining proper synchronization as you switch seamlessly from thread to thread.<br/>
+•	[Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) - A coroutine is a concurrency design pattern that you can use on Android to simplify code that executes asynchronously.<br/>
+•	[RecyclerView](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView) - Used to display the dashboard<br/>
+•	[Glide](https://github.com/bumptech/glide) - An image loading and caching library for Android focused on smooth scrolling<br/>
+•	[Material](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md)-Components - Material design components like ripple animation, cardView.<br/>
+•	[LottieFiles](https://lottiefiles.com/blog/working-with-lottie/getting-started-with-lottie-animations-in-android-app) – Splash Screen<br/>
 
 # License  :page_with_curl:<br/>
 AnimalApp is available under the MIT license. See the [LICENSE](https://github.com/ahmetufan/AnimalApp/blob/main/LICENSE) file for more info.
